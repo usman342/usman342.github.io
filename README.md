@@ -1,2 +1,2 @@
 # usman342.github.io
-Introduction about MySelf
+Introduction about myself
