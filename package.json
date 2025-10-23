@@ -1,0 +1,38 @@
+{
+  "name": "usman342.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for usman342",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static site'",
+    "test": "echo 'No tests specified'",
+    "update-plugins": "npm run update:vanilla-rss && npm run update:github-activity && npm run update:github-calendar",
+    "update:vanilla-rss": "cd assets/plugins/vanilla-rss && npm update",
+    "update:github-activity": "cd assets/plugins/github-activity && npm update",
+    "update:github-calendar": "cd assets/plugins/github-calendar && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usman342/usman342.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "github-pages",
+    "personal-website",
+    "static-site"
+  ],
+  "author": "usman342 <usman34226@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usman342/usman342.github.io/issues"
+  },
+  "homepage": "https://usman342.github.io",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
