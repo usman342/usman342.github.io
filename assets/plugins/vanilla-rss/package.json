@@ -46,7 +46,7 @@
         "codecov": "^3.6.1",
         "eslint": "^6.4.0",
         "jsdom": "^27.4.0",
-        "mocha": "^6.2.0",
+        "mocha": "^11.7.5",
         "moment": "^2.14.1",
         "node-fetch": "^2.6.0",
         "node-static": "^0.7.11",
