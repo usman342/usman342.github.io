@@ -27,12 +27,12 @@
         "test": "npm run prepack && npm run test:run",
         "test:run": "mocha test/*.test.js -t 10000",
         "test:coverage": "nyc yarn test",
-        "test:coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "test:coverage:report": "nyc report --reporter=text-lcov > coverage.lcov",
         "bundle": "node utils/bundle",
         "lint": "eslint src/**/*.js test/**/*.js",
         "prepack": "npm run version:sync && npm run bundle",
         "version:sync": "node utils/sync-version",
-        "serve": "static &",
+        "serve": "http-server &",
         "watch": "npm run serve && watch 'npm run bundle' ./src"
     },
     "engines": {
@@ -42,21 +42,24 @@
         "ballyhoo": "^2.0.2"
     },
     "devDependencies": {
-        "chai": "^4.2.0",
-        "codecov": "^3.6.1",
+        "@rollup/plugin-terser": "^1.0.0",
+        "chai": "^4.5.0",
         "eslint": "^10.0.3",
-        "jsdom": "^27.4.0",
+        "http-server": "^14.1.1",
+        "jsdom": "^29.1.1",
         "mocha": "^11.7.5",
-        "moment": "^2.14.1",
-        "node-fetch": "^2.6.0",
-        "node-static": "^0.7.11",
-        "nyc": "^14.1.1",
+        "moment": "^2.30.1",
+        "node-fetch": "^2.7.0",
+        "nyc": "^18.0.0",
         "rollup": "^2.79.2",
         "rollup-plugin-node-resolve": "^5.2.0",
-        "rollup-plugin-terser": "^5.1.2",
-        "rollup-plugin-uglify": "^6.0.3",
-        "sinon": "^7.5.0",
+        "sinon": "^22.0.0",
         "watch": "^1.0.2"
+    },
+    "overrides": {
+        "diff": "^9.0.0",
+        "merge": "^2.1.1",
+        "serialize-javascript": "^7.0.7"
     },
     "license": "MIT"
 }
