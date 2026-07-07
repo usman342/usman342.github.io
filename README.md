@@ -20,14 +20,6 @@ I'm Usman, a Technical Lead with 11+ years of experience architecting and delive
 - **[Sadaat Quran Center](https://sadaatqurancenter.com/)** - Online Quran teaching center
 - **[Soma Vine Village](https://www.somavinevillage.com/)** - Wine manufacturer site (India)
 
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=usman342&show_icons=true&theme=dark)
-
-## 🌟 Languages
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=usman342&layout=compact&theme=dark)
-
 ## 📫 Connect With Me
 
 - **Email**: usman34226@gmail.com
