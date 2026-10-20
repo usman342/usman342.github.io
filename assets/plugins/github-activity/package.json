@@ -10,11 +10,14 @@
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-cssmin": "~5.0.0",
     "grunt-contrib-uglify": "~5.2.2",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "sprintf-js": "file:vendor/sprintf-js"
   },
   "overrides": {
     "js-yaml": "^3.15.2",
-    "brace-expansion": "^1.1.21"
+    "brace-expansion": "^1.1.21",
+    "argparse": "2.0.1",
+    "sprintf-js": "$sprintf-js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

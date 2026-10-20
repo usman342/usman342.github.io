@@ -1,573 +1,739 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
-    <title>Muhammad Usman | Technical Lead</title>
-    <!-- Meta -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Usman | Technical Lead">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <!-- github activity css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <title>Muhammad Usman | Technical Lead, Software &amp; Infrastructure Engineer</title>
+    <meta name="description" content="Muhammad Usman is a technical lead in Sargodha, Pakistan, with 11+ years building backend systems, Linux infrastructure, automation, and engineering teams.">
+    <meta name="author" content="Muhammad Usman">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#0c1219" id="theme-color">
+    <link rel="canonical" href="https://usman342.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Muhammad Usman">
+    <meta property="og:title" content="Muhammad Usman | Technical Lead, Software &amp; Infrastructure Engineer">
+    <meta property="og:description" content="Muhammad Usman is a technical lead in Sargodha, Pakistan, with 11+ years building backend systems, Linux infrastructure, automation, and engineering teams.">
+    <meta property="og:url" content="https://usman342.github.io/">
+    <meta property="og:image" content="https://usman342.github.io/assets/images/profile.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Muhammad Usman | Technical Lead, Software &amp; Infrastructure Engineer">
+    <meta name="twitter:description" content="Muhammad Usman is a technical lead in Sargodha, Pakistan, with 11+ years building backend systems, Linux infrastructure, automation, and engineering teams.">
+    <meta name="twitter:image" content="https://usman342.github.io/assets/images/profile.png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme = stored === "light" || stored === "dark"
+            ? stored
+            : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+          document.documentElement.setAttribute("data-theme", theme);
+          var meta = document.getElementById("theme-color");
+          if (meta) meta.setAttribute("content", theme === "light" ? "#f6f8fb" : "#0c1219");
+        } catch (e) {}
+        document.documentElement.classList.add("js");
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Usman",
+        "jobTitle": "Technical Lead, Software and Infrastructure Engineer",
+        "description": "Technical lead and software and infrastructure engineer with 11+ years of experience in backend systems, Linux infrastructure, automation, and engineering leadership.",
+        "email": "mailto:usman34226@gmail.com",
+        "url": "https://usman342.github.io/",
+        "image": "https://usman342.github.io/assets/images/profile.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sargodha",
+          "addressCountry": "Pakistan"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "VinAudit.com, Inc.",
+          "url": "https://www.vinaudit.com/"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Sargodha"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Pakistan Steel Cadet College"
+          }
+        ],
+        "sameAs": [
+          "https://github.com/usman342",
+          "https://www.linkedin.com/in/usman342",
+          "https://x.com/usman34226",
+          "https://stackoverflow.com/users/4846227/muhammad-usman"
+        ]
+      }
+    </script>
   </head>
-  <body data-theme="dark">
-    <!-- ******HEADER****** -->
-    <header class="header">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
-            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" style="width:180px" />
-            <div class="profile-content">
-              <h1 class="name">Muhammad Usman</h1>
-              <h2 class="desc">Technical Lead</h2>
-              <ul class="social list-inline">
-                <li class="list-inline-item">
-                  <a href="https://x.com/usman34226">
-                    <i class="fab fa-x-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/usman342">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://github.com/usman342">
-                    <i class="fab fa-github-alt"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://stackoverflow.com/users/4846227/muhammad-usman">
-                    <i class="fab fa-stack-overflow"></i>
-                  </a>
-                </li>
-                <!-- <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>  -->
-              </ul>
-            </div>
-            <!--//profile-->
-          </div>
-          <!--//col-->
-          <div class="col-12 col-md-auto">
-            <div class="dark-mode-switch d-flex">
-              <div class="form-check form-switch mx-auto mx-md-0">
-                <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
-                <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-              </div>
-            </div>
-            <!--//dark-mode-switch-->
-            <a class="btn btn-cta-primary" href="mailto:usman34226@gmail.com" target="_blank">
-              <i class="fas fa-paper-plane"></i> Contact Me </a>
-          </div>
-          <!--//col-->
-        </div>
-        <!--//row-->
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="brand" href="#top">Muhammad Usman</a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-box" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="visually-hidden" id="nav-toggle-label">Open menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"></path></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z"></path></svg>
+          <span id="theme-text">Dark</span>
+        </button>
       </div>
-      <!--//container-->
     </header>
-    <!--//header-->
-    <div class="container sections-wrapper py-5">
-      <div class="row">
-        <div class="primary col-lg-8 col-12">
-          <section class="about section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">About Me</h2>
-              <div class="content">
-                <p>
-                  Technical Lead with 11+ years of experience architecting and delivering scalable, high-performance web applications. Deep expertise in PHP frameworks such as Laravel, Symfony, and CodeIgniter, grounded in strong object-oriented design, MVC architecture, and RESTful API principles.
-                  I guide engineering teams through technical direction, code reviews, and best practices, while optimizing performance, hardening security, and managing production server environments (Linux, Apache, Nginx). Passionate about mentoring developers and driving full-stack projects from design through to production, always aligning technical decisions with business goals.
-                </p>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </section>
-          <!--//section-->
-          <section class="latest section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Latest Projects</h2>
-              <div class="content">
-               <!--  <div class="item featured text-center">
-                  <div class="featured-image has-ribbon">
-                    <a href="" target="_blank">
-                      <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" />
-                    </a>
-                    <div class="ribbon">
-                      <div class="text">New</div>
-                    </div>
-                  </div>
-                  <h3 class="title mb-3">
-                    <a href="" target="_blank">Launch - The perfect Bootstrap template for SaaS products</a>
-                  </h3>
-                  <div class="desc text-start">
-                    <p></p>
-                  </div> -->
-                  <!--//desc-->
-                  <!-- <a class="btn btn-cta-secondary" href="" target="_blank">
-                    <i class="fas fa-thumbs-up"></i> Back my project </a>
-                </div> -->
-                <!--//item-->
-               <!--  <hr class="divider" /> -->
-                <div class="item row">
-                  <a class="col-md-4 col-12" href="https://sadaatqurancenter.com/" target="_blank">
-                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-1.png" alt="project name" />
-                  </a>
-                  <div class="desc col-md-8 col-12">
-                    <h3 class="title">
-                      <a href="https://sadaatqurancenter.com/" target="_blank">Sadaat Quran Center - Online Quran Teaching Center</a>
-                    </h3>
-                    <p class="mb-2">
-                      Sadaat Quran Center is an internationally recognized and registered online Quran teaching platform, established in Pakistan on December 5th, 2010. Offering free trial classes and a 24/7 teaching system, the center provides instruction in Quranic studies and basic Fiqh in English, Urdu, and Farsi. Both male and female teachers are available, and students can select their preferred time and day for one-on-one sessions.
-                    </p>
-                    <p>
-                      <a class="more-link" href="https://sadaatqurancenter.com/" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>Find out more </a>
-                    </p>
-                  </div>
-                  <!--//desc-->
-                </div>
-                <!--//item-->
-                <div class="item row">
-                  <a class="col-md-4 col-12" href="https://www.somavinevillage.com/" target="_blank">
-                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-2.png" alt="project name" />
-                  </a>
-                  <div class="desc col-md-8 col-12">
-                    <h3 class="title">
-                      <a href="https://www.somavinevillage.com/" target="_blank">Soma Vine Village - Wine Manufacturer in India</a>
-                    </h3>
-                    <p class="mb-2">
-                      Soma Vine Village, nestled along the serene backwaters of Gangapur Dam and surrounded by the majestic Sahyadri Ranges, offers a peaceful retreat for those who have everything—except time. A haven for relaxation, Soma Vine Village is a premium boutique winery and one of the best vineyards in Nashik, Maharashtra. This luxurious vineyard resort promises visitors an enchanting and unique experience, making it the perfect destination for a stress-free getaway.
-                    </p>
-                    <p>
-                      <a class="more-link" href="https://www.somavinevillage.com/" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>Find out more </a>
-                    </p>
-                  </div>
-                  <!--//desc-->
-                </div>
-                <!--//item-->
-              
-               
-                
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </section>
-          <!--//section-->
-          <!-- <section class="projects section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Other Projects</h2>
-              <div class="content">
-                <div class="item">
-                  <h3 class="title">
-                    <a href="" target="_blank">Pillar - Free for Developers</a>
-                    <span class="badge badge-theme">Free</span>
-                  </h3>
-                  <p class="summary">Provide a brief description of your project.</p>
-                  <p>
-                    <a class="more-link" href="" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>Download Now </a>
-                  </p>
-                </div> -->
-                <!--//item-->
-               <!--  <a class="btn btn-cta-secondary" href="#">More on GitHub <i class="fas fa-chevron-right pt-1"></i>
-                </a>
-              </div> -->
-              <!--//content-->
-           <!--  </div> --> 
-            <!--//section-inner-->
-          </section>
-          <!--//section-->
-          <section class="experience section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Work Experience</h2>
-              <div class="content">
-                <div class="item">
-                  <h3 class="title">Technical Lead - <span class="place">
-                      <a href="https://www.vinaudit.com/">VinAudit.com, Inc.</a>
-                    </span>
-                    <span class="year">(December 2025 -  Present)</span>
-                  </h3>
-                  <p>
-                    <ul>
-                      <li>Leads delivery across multiple projects, translating customer requirements into clear technical roadmaps.</li>
-                      <li>Breaks down end-to-end designs into step-by-step execution plans and delivers production-quality solutions aligned with business requirements.</li>
-                      <li>Designs and implements code for complex products, resolving recurring and hard-to-diagnose issues.</li>
-                      <li>Independently investigates and resolves production issues, and drives initiatives that improve team productivity.</li>
-                      <li>Champions high standards for reliability, quality, and maintainability across the codebase.</li>
-                    </ul>
-                  </p>
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="title">Senior Software Engineer - <span class="place">
-                      <a href="https://www.vinaudit.com/">VinAudit.com, Inc.</a>
-                    </span>
-                    <span class="year">(Aug 2022 -  December 2025)</span>
-                  </h3>
-                  <p>
-                    <ul>
-                      <li>Designed and delivered complex, production-quality features independently based on business requirements.</li>
-                      <li>Reviewed code and provided technical guidance to fellow engineers, raising overall code quality.</li>
-                      <li>Investigated and resolved complex production issues, often owning fixes end-to-end.</li>
-                      <li>Collaborated with cross-functional teams to translate business requirements into scalable technical solutions.</li>
-                      <li>Mentored junior developers and contributed to improving engineering best practices.</li>
-                    </ul>
-                  </p>
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="title">Software Developer - <span class="place">
-                      <a href="https://www.vinaudit.com/">VinAudit.com, Inc.</a>
-                    </span>
-                    <span class="year">(July 2016 -  Aug 2022)</span>
-                  </h3>
-                  <p>
-                    <ul>
-                      <li>Delivered development tasks according to technical specifications and senior guidance.</li>
-                      <li>Efficiently implemented high-level components for complex products.</li>
-                      <li>Communicated obstacles clearly and proposed solutions or next steps for feedback.</li>
-                      <li>Investigated and independently resolved most production issues.</li>
-                      <li>Created, maintained, and updated technical documentation.</li>
-                    </ul>
-                  </p>
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="title">Full Stack Developer - <span class="place">
-                      <a href="https://www.gosign.de/">Gosign</a>
-                    </span>
-                    <span class="year">(Jan 2016 - June 2016)</span>
-                  </h3>
-                  <p>
-                    <ul>
-                      <li>Developed, designed, and modified websites end-to-end — from layout to functionality — according to client specifications.</li>
-                      <li>Created visually appealing sites with user-friendly design and clear navigation.</li>
-                      <li>Helped clients build and maintain web applications.</li>
-                    </ul>
-                  </p>
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="title">Web Developer - <span class="place">
-                      <a href="https://dixeam.com/">Dixeam</a>
-                    </span>
-                    <span class="year">(2015 - 2016)</span>
-                  </h3>
-                  <p>
-                    <ul>
-                      <li>Completed development tasks efficiently based on step-by-step instructions.</li>
-                      <li>Implemented function- and class-level components for complex products.</li>
-                      <li>Communicated obstacles and issues encountered to receive guidance.</li>
-                      <li>Assisted other developers in investigating production issues.</li>
-                    </ul>
-                  </p>
-                </div>
-                <!--//item-->
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </section>
-          <!--//section-->
-          <section class="github section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">My GitHub</h2>
-              <div id="github-graph" class="github-graph"></div>
-              <!--//github-graph-->
-                <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
-              <div id="ghfeed" class="ghfeed"></div>
-              <!--//ghfeed-->
-            </div>
-            <!--//secton-inner-->
-          </section>
-          <!--//section-->
-        </div>
-        <!--//primary-->
-        <div class="secondary col-lg-4 col-12">
-          <aside class="info aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading sr-only">Basic Information</h2>
-              <div class="content">
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="sr-only">Location:</span>Sargodha, Pakistan
-                  </li>
-                  <li>
-                    <i class="fas fa-envelope"></i>
-                    <span class="sr-only">Email:</span>
-                    <a href="mailto:usman34226@gmail.com">usman34226@gmail.com</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-link"></i>
-                    <span class="sr-only">Website:</span>
-                    <a href="https://usman342.github.io">https://usman342.github.io</a>
-                  </li>
-                </ul>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//aside-->
-          <aside class="skills aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Skills</h2>
-              <div class="content">
-                <p class="intro"> With over 11 years of IT experience and a strong track record of successful projects, I am highly qualified in this field.</p>
-                <div class="skillset">
-                  <div class="item">
-                    <h3 class="level-title">PHP, Python, NodeJS &amp; MYSQL <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Server-side scripting, Versatile, scalable server apps with efficient data management.">
-                        <i class="fas fa-info-circle"></i>Expert </span>
-                    </h3>
-                    <div class="level-bar progress">
-                      <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="96"></div>
-                    </div>
-                    <!--//level-bar-->
-                  </div>
-                  <!--//item-->
-                  <div class="item">
-                    <h3 class="level-title">Javascript &amp; Frameworks <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="A dynamic language for building interactive web applications with Pre-built libraries that streamline development.">
-                        <i class="fas fa-info-circle"></i>Expert </span>
-                    </h3>
-                    <div class="level-bar progress">
-                      <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="94"></div>
-                    </div>
-                    <!--//level-bar-->
-                  </div>
-                  <!--//item-->
-                  <div class="item">
-                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Enabling modern web features, visually appealing web pages with more efficient styling with variables, mixins, and functions.">
-                        <i class="fas fa-info-circle"></i>Expert </span>
-                    </h3>
-                    <div class="level-bar progress">
-                      <div class="progress-bar level-bar-inner" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="96"></div>
-                    </div>
-                    <!--//level-bar-->
-                  </div>
-                  <!--//item-->
-                  <div class="item">
-                    <h3 class="level-title">Linux Servers Administration <span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="Managing and configuring Linux-based servers for optimal performance, security, and reliability.">
-                        <i class="fas fa-info-circle"></i>Expert </span>
-                    </h3>
-                    <div class="level-bar progress">
-                      <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="96"></div>
-                    </div>
-                    <!--//level-bar-->
-                  </div>
-                  <!--//item-->
-                  <p>
-                    <a class="more-link" href="https://github.com/usman342">
-                      <i class="fas fa-external-link-alt"></i>More on GitHub </a>
-                  </p>
-                </div>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
-          <aside class="testimonials aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Testimonials</h2>
-              <div class="content">
-                <div class="item">
-                  <blockquote class="quote">
-                    <p><i class="fas fa-quote-left"></i>I have had the pleasure of working with Usman for more than 7 years, and I have been consistently impressed by his reliability, work ethic, and team spirit.
-                      He is easy to work with, polite, and respectful to everyone. A quick learner and is always eager to take on new challenges.
-                      In addition to his technical skills, Usman is a great team player and is always willing to share his knowledge and expertise with others and go the extra mile to help the team succeed.
-                      I have no doubt that Usman would be an asset to any team. He brings a positive work environment to the workplace.
-                    </p>
-                  </blockquote>
-                  <p class="source">
-                    <span class="name">Nina Anciano</span>
-                    <br />
-                    <span class="title">Operations Manager, Entrepreneur</span>
-                  </p>
-                </div>
-                <!--//item-->
-                <p>
-                  <a class="more-link" href="https://www.linkedin.com/in/usman342/">
-                    <i class="fas fa-external-link-alt"></i>More on Linkedin </a>
-                </p>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
-          <aside class="education aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Education</h2>
-              <div class="content">
-                <div class="item">
-                  <h3 class="title">
-                    <i class="fas fa-graduation-cap"></i> BS Computer Science
-                  </h3>
-                  <h4 class="university">University of Sargodha <span class="year">(2012-2016)</span>
-                  </h4>
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="title">
-                    <i class="fas fa-graduation-cap"></i> FSc (Pre-Engineering)
-                  </h3>
-                  <h4 class="university">Pakistan Steel Cadet College, Karachi <span class="year">(2009-2011)</span>
-                  </h4>
-                </div>
-                <!--//item-->
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
-          <aside class="languages aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Languages</h2>
-              <div class="content">
-                <ul class="list-unstyled">
-                  <li class="item">
-                    <span class="title">
-                      <strong>English:</strong>
-                    </span>
-                    <span class="level">Professional Proficiency <br class="visible-xs" />
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half"></i>
-                    </span>
-                  </li>
-                  <!--//item-->
-                  <li class="item">
-                    <span class="title">
-                      <strong>Urdu:</strong>
-                    </span>
-                    <span class="level">Native Speaker <br class="visible-sm visible-xs" />
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </span>
-                  </li>
-                  <!--//item-->
-                </ul>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
-          <!--//section-->
-          <aside class="list music aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Favourite coding music</h2>
-              <div class="content">
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fas fa-headphones"></i>
-                    <a href="https://www.youtube.com/watch?v=AJtDXIazrMo">Ellie Goulding - Love Me Like You Do</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-headphones"></i>
-                    <a href="https://www.youtube.com/watch?v=bC3WAxiLnDY">Arash - Broken Angel </a>
-                  </li>
-                  <li>
-                    <i class="fas fa-headphones"></i>
-                    <a href="https://www.youtube.com/watch?v=neKpRbljK-w">Akcent feat Ruxandra Bar - Feelings On Fire</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-headphones"></i>
-                    <a href="https://www.youtube.com/watch?v=lrYlcytsBdE">Akcent - I'm Sorry</a>
-                  </li>
-                </ul>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
 
-          <aside class="credits aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Credits</h2>
-              <div class="content">
-                <ul class="list-unstyled pb-2">
-                  <li>
-                    <a href="https://getbootstrap.com/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>Bootstrap </a>
-                  </li>
-                  <li>
-                    <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>FontAwesome </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin </a>
-                  </li>
-                  <li>
-                    <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>GitHub Activity Stream </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/sdepold/vanilla-rss" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>Vanilla RSS </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/coliff/dark-mode-switch">
-                      <i class="fas fa-external-link-alt"></i>Dark Mode Switch </a>
-                  </li>
-                </ul>
-                <hr />
-                <p>Follow <a href="https://x.com/usman34226" target="_blank">me</a> on X.</p>
-                <a class="btn btn-cta-secondary btn-follow" href="https://x.com/usman34226" target="_blank">
-                  <i class="fab fa-x-twitter"></i> Follow on X </a>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
+    <main id="main" tabindex="-1">
+      <section class="hero" id="top" aria-label="Introduction" tabindex="-1">
+        <div class="container hero-grid">
+          <p class="eyebrow">Sargodha, Pakistan</p>
+          <h1>Muhammad Usman</h1>
+          <p class="headline">Technical Lead |<br>Software &amp; Infrastructure Engineer</p>
+          <figure class="portrait">
+            <picture>
+              <source srcset="assets/images/profile.avif" type="image/avif">
+              <source srcset="assets/images/profile.webp" type="image/webp">
+              <img src="assets/images/profile.png" width="355" height="355" alt="Portrait of Muhammad Usman" fetchpriority="high" decoding="async">
+            </picture>
+          </figure>
+          <p class="lede">Building scalable software. Engineering reliable infrastructure. Leading teams that deliver.</p>
+          <ul class="hero-points">
+            <li>11+ years</li>
+            <li>Backend systems</li>
+            <li>Infrastructure</li>
+            <li>Automation</li>
+            <li>Engineering leadership</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/usman342" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/usman342" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="mailto:usman34226@gmail.com">Contact Me</a>
+            <a class="button button-ghost" href="#work">Explore Projects</a>
+          </div>
         </div>
-        <!--//secondary-->
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Profile</p>
+            <h2 id="about-title">About</h2>
+          </div>
+          <div class="prose">
+            <p>I have spent more than 11 years on the parts of software that have to keep working: backend applications, Linux servers, and the operational detail around them. That includes PHP systems and REST APIs, MySQL and MariaDB, and infrastructure on AlmaLinux and CentOS with Apache, Nginx, and Squid.</p>
+            <p>Production reliability is the through-line. I want to know how a service is configured, what to look at when it degrades, and which steps should be automated so they do not depend on memory. Where workloads belong in virtual machines, I use Proxmox, and I treat backups as part of the design.</p>
+            <p>Leadership, for me, is technical. I plan the work, review the code, and mentor engineers who are taking on harder problems. The aim is a team that can ship, explain its choices, and recover when production does something unexpected.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band" id="expertise" aria-labelledby="expertise-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">What I work on</p>
+            <h2 id="expertise-title">Expertise</h2>
+            <p>The areas I am asked to own: backend architecture, Linux infrastructure, and the engineering practice around them.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13 6l-2 12"></path></svg>
+              </div>
+              <h3>Backend Engineering</h3>
+              <p>PHP application work with Laravel, Symfony, CodeIgniter, LeafPHP, and FlightPHP, including REST APIs and the structure those systems need to stay changeable.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><path d="M7 7h.01M7 17h.01"></path></svg>
+              </div>
+              <h3>Infrastructure &amp; Linux</h3>
+              <p>Linux servers in production, including AlmaLinux and CentOS, with Apache, Nginx, and Squid, and hosting panels such as Virtualmin and cPanel.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"></path><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"></path></svg>
+              </div>
+              <h3>Virtualization</h3>
+              <p>Proxmox VE for virtual machines and cluster management, and Proxmox Backup Server so recovery is part of the setup.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"></ellipse><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path></svg>
+              </div>
+              <h3>Databases</h3>
+              <p>MySQL, MariaDB, and PostgreSQL, including Supabase, and query optimization when a feature is slow because of the database rather than the application.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h16"></path><path d="M17 10l3 2-3 2"></path></svg>
+              </div>
+              <h3>Automation</h3>
+              <p>Python, Node.js, Bash, and shell scripting, plus CI/CD where a repeated path should not stay a manual checklist.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+              </div>
+              <h3>Payments &amp; Security</h3>
+              <p>Stripe, PayPal, cryptocurrency, and other payment methods, including checkout systems and fraud prevention as part of taking a payment rather than a later add-on.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"></path></svg>
+              </div>
+              <h3>Observability &amp; Reliability</h3>
+              <p>Monitoring, troubleshooting, and the operational work of keeping a service understandable when it degrades.</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M16 20v-1a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v1"></path><circle cx="10" cy="8" r="3"></circle><path d="M20 20v-1a3 3 0 0 0-2.2-2.9M16 5.1a3 3 0 0 1 0 5.8"></path></svg>
+              </div>
+              <h3>Engineering Leadership</h3>
+              <p>Architecture, technical planning, code review, and mentoring engineers who are taking on harder problems.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Selected work</p>
+            <h2 id="work-title">Selected engineering work</h2>
+            <p>Two public websites are linked with the live URL. The practice areas describe production work in qualitative terms. They leave out client-confidential detail and any metric that has not been cleared for publication.</p>
+          </div>
+
+          <p class="group-label">Public websites</p>
+          <div class="project-list">
+            <article class="card project-card reveal">
+              <figure class="project-media">
+                <picture>
+                  <source srcset="assets/images/projects/project-1.avif" type="image/avif">
+                  <source srcset="assets/images/projects/project-1.webp" type="image/webp">
+                  <img src="assets/images/projects/project-1.png" width="600" height="450" alt="Homepage of the Sadaat Quran Center website" loading="lazy" decoding="async">
+                </picture>
+              </figure>
+              <div>
+                <p class="work-kind">Public project</p>
+                <h3>Sadaat Quran Center</h3>
+                <dl class="facts">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>An online teaching center needs a public site that explains courses, scheduling, registration, and fees.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>Organize the site around those questions, so a visitor can see what is taught, when sessions happen, and how to register.</dd>
+                  </div>
+                  <div>
+                    <dt>Outcome</dt>
+                    <dd>A live site that presents the center and how families enroll.</dd>
+                  </div>
+                </dl>
+                <p class="card-link"><a href="https://sadaatqurancenter.com/" target="_blank" rel="noopener noreferrer">Visit sadaatqurancenter.com</a></p>
+              </div>
+            </article>
+
+            <article class="card project-card reveal">
+              <figure class="project-media">
+                <picture>
+                  <source srcset="assets/images/projects/project-2.avif" type="image/avif">
+                  <source srcset="assets/images/projects/project-2.webp" type="image/webp">
+                  <img src="assets/images/projects/project-2.png" width="600" height="450" alt="Homepage of the Soma Vine Village website" loading="lazy" decoding="async">
+                </picture>
+              </figure>
+              <div>
+                <p class="work-kind">Public project</p>
+                <h3>Soma Vine Village</h3>
+                <dl class="facts">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>A vineyard and hospitality property in Nashik needs a public site for the place, the stay, and the visit.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>A content site organized around the property and its experiences, with a direct path to learn more.</dd>
+                  </div>
+                  <div>
+                    <dt>Outcome</dt>
+                    <dd>A live marketing site for the property.</dd>
+                  </div>
+                </dl>
+                <p class="card-link"><a href="https://www.somavinevillage.com/" target="_blank" rel="noopener noreferrer">Visit somavinevillage.com</a></p>
+              </div>
+            </article>
+          </div>
+
+          <p class="group-label">Practice areas</p>
+          <div class="practice-grid">
+            <article class="card reveal" data-review="qualitative">
+              <p class="work-kind">Practice area</p>
+              <h3>Proxy infrastructure and reliability</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Proxy traffic has to keep moving when configuration, capacity, or an upstream changes.</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>Run it on Linux with Squid, and with Apache or Nginx beside it, and treat diagnosis as part of the design rather than an afterthought.</dd>
+                </div>
+                <div>
+                  <dt>Technologies</dt>
+                  <dd>Squid, AlmaLinux, CentOS, Apache, Nginx</dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>A proxy path that can be configured and diagnosed in production.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="card reveal" data-review="qualitative">
+              <p class="work-kind">Practice area</p>
+              <h3>Proxmox cluster management</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Services need isolation, a place to restore from, and a way to manage hosts that is not a pile of one-off machines.</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>Run workloads as virtual machines on Proxmox VE, with Proxmox Backup Server for backups.</dd>
+                </div>
+                <div>
+                  <dt>Technologies</dt>
+                  <dd>Proxmox VE, Proxmox Backup Server</dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>Virtual machines that are provisioned, maintained, and restorable as part of normal operations.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="card reveal" data-review="qualitative">
+              <p class="work-kind">Practice area</p>
+              <h3>Checkout and fraud prevention</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Taking payment is not finished when a charge succeeds. Failed payments and abuse belong in the same flow.</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>Checkout with Stripe, PayPal, cryptocurrency, and other payment methods, with fraud prevention treated as part of the payment design.</dd>
+                </div>
+                <div>
+                  <dt>Technologies</dt>
+                  <dd>Stripe, PayPal, cryptocurrency, PHP, REST APIs</dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>Checkout flows built around successful payment and resistance to abuse.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="card reveal" data-review="qualitative">
+              <p class="work-kind">Practice area</p>
+              <h3>Linux server migrations</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Aging servers and OS releases make every later change riskier.</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>Plan the move onto maintained Linux, including AlmaLinux and CentOS, and check that the new host matches the behavior that mattered on the old one.</dd>
+                </div>
+                <div>
+                  <dt>Technologies</dt>
+                  <dd>AlmaLinux, CentOS, Apache, Nginx, Virtualmin, cPanel, Linux</dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>Migrations handled as operational work: what moves, what is verified, and what is turned off.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="card reveal" data-review="qualitative">
+              <p class="work-kind">Practice area</p>
+              <h3>Monitoring and incident response</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>A production fault discovered only by a user report is already late, and the fix should not live only in someone's memory.</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>Monitoring and hands-on troubleshooting, plus automation in Python, Node.js, Bash, and shell. CI/CD where it removes a repeated manual path.</dd>
+                </div>
+                <div>
+                  <dt>Technologies</dt>
+                  <dd>Python, Node.js, Bash, shell scripting, CI/CD</dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>Issues that are easier to see, and repeat work that depends less on manual steps.</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="card reveal" data-review="qualitative">
+              <p class="work-kind">Practice area</p>
+              <h3>Web applications and backend architecture</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Features stall when the backend is unclear, the API is accidental, or the database has to be guessed at.</dd>
+                </div>
+                <div>
+                  <dt>Approach</dt>
+                  <dd>PHP applications with Laravel, Symfony, CodeIgniter, LeafPHP, and FlightPHP; REST APIs; MySQL, MariaDB, PostgreSQL, and Supabase, including query work when the database is the constraint. Architecture and review so other engineers can change it.</dd>
+                </div>
+                <div>
+                  <dt>Technologies</dt>
+                  <dd>PHP, Laravel, Symfony, CodeIgniter, LeafPHP, FlightPHP, MySQL, MariaDB, PostgreSQL, Supabase, REST</dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>Backends shaped so they can be changed, reviewed, and operated.</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band" id="experience" aria-labelledby="experience-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Career</p>
+            <h2 id="experience-title">Work experience</h2>
+            <p>Employers, titles, and dates are as previously published on this site.</p>
+          </div>
+          <ol class="timeline">
+            <li class="reveal">
+              <article>
+                <h3>Technical Lead</h3>
+                <p class="role-meta">
+                  <a href="https://www.vinaudit.com/" target="_blank" rel="noopener noreferrer">VinAudit.com, Inc.</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>December 2025 – Present</span>
+                </p>
+                <ul>
+                  <li>Leads delivery across projects, turning customer requirements into technical plans.</li>
+                  <li>Breaks designs into execution steps and ships production-quality work aligned with those requirements.</li>
+                  <li>Designs code for complex products and resolves recurring, hard-to-diagnose issues.</li>
+                  <li>Investigates production problems independently and drives work that helps the team move faster.</li>
+                  <li>Holds the bar for reliability, quality, and maintainability.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="reveal">
+              <article>
+                <h3>Senior Software Engineer</h3>
+                <p class="role-meta">
+                  <a href="https://www.vinaudit.com/" target="_blank" rel="noopener noreferrer">VinAudit.com, Inc.</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>Aug 2022 – December 2025</span>
+                </p>
+                <ul>
+                  <li>Designed and delivered complex production features from business requirements.</li>
+                  <li>Reviewed code and gave technical guidance to other engineers.</li>
+                  <li>Investigated and resolved difficult production issues, often owning the fix end to end.</li>
+                  <li>Worked with other functions to turn requirements into technical solutions.</li>
+                  <li>Mentored junior developers and contributed to engineering practice.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="reveal">
+              <article>
+                <h3>Software Developer</h3>
+                <p class="role-meta">
+                  <a href="https://www.vinaudit.com/" target="_blank" rel="noopener noreferrer">VinAudit.com, Inc.</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>July 2016 – Aug 2022</span>
+                </p>
+                <ul>
+                  <li>Delivered work from technical specifications and senior guidance.</li>
+                  <li>Implemented substantial components of complex products.</li>
+                  <li>Raised obstacles early and proposed a next step.</li>
+                  <li>Investigated and resolved most production issues independently.</li>
+                  <li>Wrote and maintained technical documentation.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="reveal">
+              <article>
+                <h3>Full Stack Developer</h3>
+                <p class="role-meta">
+                  <a href="https://www.gosign.de/" target="_blank" rel="noopener noreferrer">Gosign</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>Jan 2016 – June 2016</span>
+                </p>
+                <ul>
+                  <li>Built and modified websites from layout through behavior, to client specifications.</li>
+                  <li>Kept navigation and presentation understandable for the people using the site.</li>
+                  <li>Helped clients build and maintain web applications.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="reveal">
+              <article>
+                <h3>Web Developer</h3>
+                <p class="role-meta">
+                  <a href="https://dixeam.com/" target="_blank" rel="noopener noreferrer">Dixeam</a>
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>2015 – 2016</span>
+                </p>
+                <ul>
+                  <li>Completed development tasks from step-by-step instructions.</li>
+                  <li>Implemented function- and class-level components.</li>
+                  <li>Communicated blockers in order to get guidance.</li>
+                  <li>Assisted other developers investigating production issues.</li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="stack" aria-labelledby="stack-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Tools</p>
+            <h2 id="stack-title">Technology</h2>
+            <p>Named technologies only. No proficiency scores.</p>
+          </div>
+          <div class="stack-grid">
+            <article class="card stack-card reveal">
+              <h3>Backend</h3>
+              <ul class="chips">
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Symfony</li>
+                <li>CodeIgniter</li>
+                <li>LeafPHP</li>
+                <li>FlightPHP</li>
+                <li>REST APIs</li>
+              </ul>
+            </article>
+            <article class="card stack-card reveal">
+              <h3>Infrastructure</h3>
+              <ul class="chips">
+                <li>Linux</li>
+                <li>AlmaLinux</li>
+                <li>CentOS</li>
+                <li>Apache</li>
+                <li>Nginx</li>
+                <li>Squid</li>
+                <li>Virtualmin</li>
+                <li>cPanel</li>
+                <li>Vercel</li>
+              </ul>
+            </article>
+            <article class="card stack-card reveal">
+              <h3>Virtualization</h3>
+              <ul class="chips">
+                <li>Proxmox VE</li>
+                <li>Proxmox Backup Server</li>
+              </ul>
+            </article>
+            <article class="card stack-card reveal">
+              <h3>Databases</h3>
+              <ul class="chips">
+                <li>MySQL</li>
+                <li>MariaDB</li>
+                <li>PostgreSQL</li>
+                <li>Supabase</li>
+              </ul>
+            </article>
+            <article class="card stack-card reveal">
+              <h3>Automation</h3>
+              <ul class="chips">
+                <li>Python</li>
+                <li>Node.js</li>
+                <li>Bash</li>
+                <li>Shell scripting</li>
+                <li>CI/CD</li>
+              </ul>
+            </article>
+            <article class="card stack-card reveal">
+              <h3>Payments</h3>
+              <ul class="chips">
+                <li>Stripe</li>
+                <li>PayPal</li>
+                <li>Cryptocurrency</li>
+                <li>Other payment methods</li>
+              </ul>
+            </article>
+            <article class="card stack-card reveal">
+              <h3>Interface</h3>
+              <ul class="chips">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Sass</li>
+                <li>Less</li>
+              </ul>
+            </article>
+            <article class="card stack-card reveal">
+              <h3>Tools</h3>
+              <ul class="chips">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>ClickUp</li>
+                <li>AI tools</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-band" id="github" aria-labelledby="github-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Public record</p>
+            <h2 id="github-title">GitHub</h2>
+            <p>Public contributions, events, and repositories for <a href="https://github.com/usman342" target="_blank" rel="noopener noreferrer">usman342</a>. Private work is not shown, and a quiet graph is not treated as inactivity.</p>
+          </div>
+          <div class="gh-layout">
+            <div class="card gh-panel">
+              <h3>Contributions</h3>
+              <div id="gh-calendar" aria-live="polite" aria-busy="true">
+                <p class="status">Loading the public contribution graph…</p>
+              </div>
+            </div>
+            <div class="gh-split">
+              <div class="card gh-panel">
+                <h3>Recent public activity</h3>
+                <div id="gh-activity" aria-live="polite" aria-busy="true">
+                  <p class="status">Loading recent public activity…</p>
+                </div>
+              </div>
+              <div class="card gh-panel">
+                <h3>Public repositories</h3>
+                <div id="gh-repos" aria-live="polite" aria-busy="true">
+                  <p class="status">Loading public repositories…</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <noscript>
+            <p><a href="https://github.com/usman342" target="_blank" rel="noopener noreferrer">View the GitHub profile</a>. The graphs on this page need JavaScript. They use the public API only, with no access token.</p>
+          </noscript>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials" aria-labelledby="testimonials-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Recommendation</p>
+            <h2 id="testimonials-title">Testimonials</h2>
+          </div>
+          <figure class="quote-card reveal">
+            <blockquote>
+              <p>I have had the pleasure of working with Usman for more than 7 years, and I have been consistently impressed by his reliability, work ethic, and team spirit. He is easy to work with, polite, and respectful to everyone. A quick learner and is always eager to take on new challenges. In addition to his technical skills, Usman is a great team player and is always willing to share his knowledge and expertise with others and go the extra mile to help the team succeed. I have no doubt that Usman would be an asset to any team. He brings a positive work environment to the workplace.</p>
+            </blockquote>
+            <figcaption>
+              <span class="name">Nina Anciano</span>
+              <span class="role">Operations Manager, Entrepreneur</span>
+            </figcaption>
+            <p class="card-link"><a href="https://www.linkedin.com/in/usman342/" target="_blank" rel="noopener noreferrer">More on LinkedIn</a></p>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-band" id="education" aria-labelledby="education-title" tabindex="-1">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Background</p>
+            <h2 id="education-title">Education and languages</h2>
+          </div>
+          <div class="edu-grid">
+            <article class="card reveal">
+              <h3>Education</h3>
+              <ul class="edu-list">
+                <li>
+                  <p class="edu-title">BS Computer Science</p>
+                  <p class="edu-meta">University of Sargodha <span>2012–2016</span></p>
+                </li>
+                <li>
+                  <p class="edu-title">FSc (Pre-Engineering)</p>
+                  <p class="edu-meta">Pakistan Steel Cadet College, Karachi <span>2009–2011</span></p>
+                </li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <h3>Languages</h3>
+              <ul class="edu-list">
+                <li>
+                  <p class="edu-title">English</p>
+                  <p class="edu-meta">Professional proficiency</p>
+                </li>
+                <li>
+                  <p class="edu-title">Urdu</p>
+                  <p class="edu-meta">Native speaker</p>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title" tabindex="-1">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <p class="kicker">Next step</p>
+            <h2 id="contact-title">Contact</h2>
+            <p class="lede">If you are hiring, scoping a technical engagement, or want to talk through a production problem, write to me.</p>
+            <p class="contact-mail">
+              <a class="button button-primary" href="mailto:usman34226@gmail.com">usman34226@gmail.com</a>
+            </p>
+            <ul class="contact-links">
+              <li><a href="https://github.com/usman342" target="_blank" rel="me noopener noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/usman342" target="_blank" rel="me noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://x.com/usman34226" target="_blank" rel="me noopener noreferrer">X</a></li>
+              <li><a href="https://stackoverflow.com/users/4846227/muhammad-usman" target="_blank" rel="me noopener noreferrer">Stack Overflow</a></li>
+            </ul>
+            <p class="contact-place">Sargodha, Pakistan</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-bar">
+        <p>© 2026 Muhammad Usman · Sargodha, Pakistan</p>
+        <p><a href="#top">Back to top</a> · <a href="https://github.com/usman342/usman342.github.io" target="_blank" rel="noopener noreferrer">Source</a></p>
+        <p class="fine">Bootstrap, Font Awesome, GitHub Calendar, GitHub Activity, Vanilla RSS, Mustache, and Dark Mode Switch remain under <span class="path">assets/plugins</span> and <span class="path">assets/fontawesome</span> with their own licenses. This page does not load them.</p>
       </div>
-      <!--//row-->
-    </div>
-    <!--//masonry-->
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-      <div class="container text-center">
-        <small class="copyright">Designed with <span class="sr-only">love</span>
-          <i class="fas fa-heart"></i> by <a href="#" target="_blank">Xiaoying Riley</a> </small>
-      </div>
-      <!--//container-->
     </footer>
-    <!--//footer-->
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="assets/plugins/mustache.js/4.2.0/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
